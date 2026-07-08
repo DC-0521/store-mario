@@ -4,11 +4,14 @@ function Header() {
   return (
     <header style={styles.header}>
       <div style={styles.logoContainer}>
-        <span style={styles.logoM}>M</span>
+        <img 
+          src="/logo-mario.png" 
+          alt="Mario & Co. Logo" 
+          style={styles.logoImg} 
+        />
         <h1 style={styles.title}>Mario & Co. Store</h1>
       </div>
       <nav style={styles.nav}>
-        {/* Enlaces estáticos como solicita la actividad */}
         <a href="#inicio" style={styles.link}>Inicio</a>
         <a href="#gorras" style={styles.link}>Gorras</a>
         <a href="#figuras" style={styles.link}>Figuras</a>
@@ -23,11 +26,10 @@ function Header() {
 const styles = {
   header: {
     display: 'flex',
-    justifyContent: 'between',
     alignItems: 'center',
     padding: '15px 40px',
-    backgroundColor: '#white',
-    borderBottom: '4px solid var(--mario-red)',
+    backgroundColor: '#e60012', // Rojo Nintendo oficial
+    borderBottom: '4px solid #b3000e', // Un tono más oscuro abajo para dar relieve
     justifyContent: 'space-between',
   },
   logoContainer: {
@@ -35,19 +37,18 @@ const styles = {
     alignItems: 'center',
     gap: '10px',
   },
-  logoM: {
-    backgroundColor: 'var(--mario-red)',
-    color: 'white',
-    padding: '5px 12px',
-    borderRadius: '50%',
-    fontWeight: 'bold',
-    fontSize: '20px',
-    border: '2px solid var(--mario-yellow)',
+  logoImg: {
+    width: '45px',
+    height: '45px',
+    objectFit: 'contain',
+    borderRadius: '4px',
+    border: '2px solid white', // Borde blanco sutil para resaltar el logo sobre el rojo
   },
   title: {
     margin: 0,
     fontSize: '22px',
-    color: 'var(--text-dark)',
+    color: 'white', // Texto en blanco
+    fontFamily: 'sans-serif',
   },
   nav: {
     display: 'flex',
@@ -55,14 +56,15 @@ const styles = {
   },
   link: {
     textDecoration: 'none',
-    color: 'var(--text-dark)',
+    color: 'white', // Enlaces en blanco
     fontWeight: 'bold',
     fontSize: '16px',
-    transition: 'color 0.2s',
+    transition: 'opacity 0.2s',
   },
   cartIcon: {
     fontSize: '24px',
     cursor: 'pointer',
+    filter: 'brightness(0) invert(1)', // Truco CSS para que el emoji de carrito adopte tonos más claros o resalte en fondo oscuro si es necesario, o lo dejamos estándar
   }
 };
 

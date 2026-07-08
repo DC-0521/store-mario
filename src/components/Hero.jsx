@@ -3,51 +3,51 @@ import React from 'react';
 function Hero() {
   return (
     <section style={styles.hero}>
-      <div style={styles.overlay}>
-        <div style={styles.content}>
-          <h2 style={styles.headline}>¡Lleva la magia del Reino Champiñón a tu hogar!</h2>
-          <p style={styles.subheadline}>
-            Explora la colección exclusiva de mercancía oficial de Super Mario. Figuras coleccionables, gorras, ropa y accesorios pensados para verdaderos fanáticos de Nintendo.
-          </p>
-          <button className="btn-mario" style={styles.button}>
-            Ver Catálogo Inicial
-          </button>
-        </div>
-      </div>
+      <h2 style={styles.title}>¡Lleva la magia del Reino Champiñón a tu hogar!</h2>
+      <p style={styles.subtitle}>
+        Explora la colección exclusiva de mercancía oficial de Super Mario. Figuras coleccionables, gorras, 
+        ropa y accesorios pensados para verdaderos fanáticos de Nintendo.
+      </p>
+      <button style={styles.button}>Ver Catálogo Inicial</button>
     </section>
   );
 }
 
 const styles = {
   hero: {
-    // Puedes usar un color de fondo temático degradado o añadir una imagen limpia después
-    background: 'linear-gradient(135deg, var(--mario-red) 0%, #a81310 100%)',
-    color: 'white',
-    padding: '80px 20px',
+    backgroundColor: '#ffffff', // Fondo blanco emulando a Nintendo
+    color: '#323232', // Texto oscuro para que sea perfectamente legible
     textAlign: 'center',
+    padding: '80px 20px',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  content: {
-    maxWidth: '800px',
-    margin: '0 auto',
-  },
-  headline: {
-    fontSize: '42px',
+  title: {
+    fontSize: '40px',
     margin: '0 0 20px 0',
-    textShadow: '2px 2px 4px rgba(0,0,0,0.4)',
+    color: '#1a1a1a', // Un tono más fuerte para el encabezado principal
+    fontWeight: 'bold',
   },
-  subheadline: {
+  subtitle: {
     fontSize: '18px',
+    maxWidth: '800px',
+    margin: '0 0 40px 0',
     lineHeight: '1.6',
-    margin: '0 0 30px 0',
-    opacity: '0.9',
+    color: '#4a4a4a', // Gris equilibrado para el párrafo
   },
   button: {
-    fontSize: '18px',
+    backgroundColor: '#e60012', // Botón rojo llamativo clásico de los botones de Nintendo
+    color: 'white',
+    border: 'none',
     padding: '12px 30px',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.2)',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    transition: 'background-color 0.2s',
   }
 };
 
