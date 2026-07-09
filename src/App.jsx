@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 
-// Nota: Tus compañeros importarán sus componentes aquí (ProductList, Features, Footer)
+import ProductList from './components/ProductList';
+
 
 function App() {
   return (
@@ -10,14 +11,14 @@ function App() {
       <Header />
       <main>
         <Hero />
-        
-        {/* Aquí Michael colocará su componente: */}
-        {/* <ProductList /> */}
-        
+
+        {/* 2. Colocamos tu componente en el bloque asignado a Michael */}
+        <ProductList />
+
         {/* Aquí tu otro compañero colocará su componente: */}
         {/* <Features /> */}
       </main>
-      
+
       {/* Aquí tu otro compañero colocará su componente: */}
       {/* <Footer /> */}
     </div>
