@@ -4,9 +4,24 @@ import ProductCard from './ProductCard';
 const ProductList = () => {
     // Arreglo con la información de los productos solicitados
     const products = [
-        { id: 1, name: 'Gorra Oficial de Mario', price: 19.99, image: 'https://images.unsplash.com/photo-1575426158832-5a5395e297a0?q=80&w=200' },
-        { id: 2, name: 'Lámpara Bloque de Pregunta', price: 29.99, image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=200' },
-        { id: 3, name: 'Peluche de Yoshi', price: 24.99, image: 'https://images.unsplash.com/photo-1559251606-c623743a6d76?q=80&w=200' }
+        { 
+            id: 1, 
+            name: 'Gorra Oficial de Mario', 
+            price: 19.99, 
+            image: '/gorra-mario.png' // <-- Ruta local directa a la carpeta public
+        },
+        { 
+            id: 2, 
+            name: 'Lámpara Bloque de Pregunta', 
+            price: 29.99, 
+            image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=200' 
+        },
+        { 
+            id: 3, 
+            name: 'Peluche de Yoshi', 
+            price: 24.99, 
+            image: 'https://images.unsplash.com/photo-1559251606-c623743a6d76?q=80&w=200' 
+        }
     ];
 
     return (
