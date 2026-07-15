@@ -1,16 +1,33 @@
-# React + Vite
+# 🍄 Mario & Co. Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Lleva la magia del Reino Champiñón a tu hogar! **Mario & Co. Store** es una tienda web interactiva de e-commerce diseñada para fanáticos de Nintendo, donde se puede explorar una colección exclusiva de mercancía oficial de Super Mario, como gorras, figuras coleccionables, ropa y accesorios.
 
-Currently, two official plugins are available:
+Este proyecto ha sido desarrollado como una aplicación web moderna, responsiva y con una interfaz de usuario atractiva y fluida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Diseño Temático Premium:** Interfaz inspirada en la paleta de colores oficial de Nintendo (rojo, blanco y detalles contrastantes).
+- **Catálogo Interactivo:** Sección de productos con tarjetas detalladas que muestran imágenes, nombres, precios y botones de compra rápidos.
+- **Navegación Intuitiva:** Menú de navegación (Header) persistente que facilita el filtrado por categorías (*Inicio, Gorras, Figuras, Ropa, Contacto*) junto a un botón de carrito de compras.
+- **Responsive Design:** Maquetación adaptada para ofrecer una experiencia óptima tanto en dispositivos móviles como en ordenadores de escritorio.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Utilizadas
+
+El proyecto fue desarrollado utilizando el siguiente ecosistema de herramientas:
+
+* **Estructura y Maquetación:** HTML5 y CSS3 (diseño responsivo con Flexbox / CSS Grid).
+* **Entorno de Desarrollo & Empaquetador:** [Vite](https://vite.dev/) (para una recarga rápida en desarrollo y compilación optimizada).
+* **Control de Versiones:** Git y GitHub para el despliegue de la rama principal (`main`).
+
+---
+## 👥 Autores
+
+Esta página fue desarrollada por:
+
+* 👤 **Daniel Carpio** - [GitHub](https://github.com/DC-0521)
+* 👤 **Michael Peralta** - [GitHub](https://github.com/0950350017-png)
+* 👤 **Joseph Castro** - [GitHub](https://github.com/CJzZ1)
